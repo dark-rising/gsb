@@ -1,0 +1,8 @@
+/// Resolve image URL by PostCSS Assets plugin
+/// @link https://github.com/borodean/postcss-assets
+/// @param {string} $url - image path
+/// @example
+///  @include background-image('image.png');
+@mixin background-image($url) {
+  background-image: resolve($url);
+}
